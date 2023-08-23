@@ -27,7 +27,7 @@ const surName = document.querySelector('#surName')
 // console.log(surName)
 const signupEmail = document.querySelector('#signup-Email')
 // console.log(signupEmail.value)
-const signupPassword = document.querySelector('#signup-Password')
+const signupPassword = document.querySelector('#signup-password')
 // console.log(signupPassword.value)
 const cPassword = document.querySelector('#C-Password')
 // console.log(cPassword)
@@ -68,6 +68,9 @@ function loginHandler() {
 }
 
 function signupHandler() {
+
+    // console.log(signupEmail.value);
+    // console.log(signupPassword.value);
     createUserWithEmailAndPassword(auth, signupEmail.value, signupPassword.value)
         .then((userCredential) => {
             // Signed in 
